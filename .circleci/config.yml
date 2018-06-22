@@ -34,3 +34,9 @@ jobs:
       - run:
            name: Start Docker
            command: docker-compose -f ./sl-base/docker-compose.yml up -d
+      - deploy:
+          name: Deploy
+          command: docker-compose -f ./sl-base/docker-compose.yml exec \
+            -e CIRCLE_BRANCH=$CIRCLE_BRANCH \
+            -e GRAPHCOOL_TARGET=$GRAPHCOOL_TARGET \
+             data .circleci/deploy.sh
