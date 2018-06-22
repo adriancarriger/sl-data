@@ -39,4 +39,4 @@ jobs:
           command: docker-compose -f ./sl-base/docker-compose.yml exec \
             -e CIRCLE_BRANCH=$CIRCLE_BRANCH \
             -e GRAPHCOOL_TARGET=$GRAPHCOOL_TARGET \
-             data .circleci/deploy.sh
+             data /bin/sh -c ".circleci/deploy.sh"
