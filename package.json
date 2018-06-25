@@ -1,10 +1,10 @@
 {
-  "name": "graphcool7",
+  "name": "prisma",
   "version": "1.0.0",
-  "description": "My Graphcool Service",
+  "description": "My Prisma Service",
   "scripts": {
     "start": "nodemon --config config/nodemon.json",
-    "build": "graphcool deploy --target local"
+    "build": "prisma deploy"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
