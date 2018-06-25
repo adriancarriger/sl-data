@@ -1,23 +1,13 @@
 FROM node:8-alpine
 WORKDIR /app
 
-RUN apk update && \
-  apk add --no-cache \
-  docker \
-  py-pip \
-  curl \
-  curl-dev \
-  && pip install --upgrade pip \
-  && pip install \
-  docker-compose \
-  && yarn global add \
-  graphcool
+RUN yarn global add \
+  prisma
 
-COPY . /app
-COPY ./config/root-graphcoolrc.yml /root/.graphcoolrc
+COPY package.json .
 
 RUN yarn
 
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+COPY . .
 
 CMD [ "yarn", "start" ]

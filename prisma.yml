@@ -1,0 +1,9 @@
+# The endpoint of your Prisma API (deployed to a Prisma Sandbox).
+endpoint: http://prisma:4466
+
+# The file containing the definition of your data model.
+datamodel: datamodel.graphql
+
+# Seed your service with initial data based on `seed.graphql`.
+seed:
+  import: seed.graphql

@@ -1,6 +1,6 @@
 # sl-data
 
-A serverless data layer based on the [Graphcool Framework](https://github.com/prismagraphql/graphcool-framework).
+Data layer based on [Prisma](https://github.com/prismagraphql/prisma).
 
 ## Microservices
 

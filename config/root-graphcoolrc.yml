@@ -1,5 +1,0 @@
-graphcool-framework:
-  clusters:
-    local:
-      host: 'http://graphcool:60000'
-      faasHost: 'http://localfaas:60050'
