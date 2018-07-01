@@ -34,3 +34,10 @@ jobs:
       - run:
            name: Start Docker
            command: docker-compose -f ./sl-base/docker-compose.yml up -d
+      - deploy:
+          name: Deploy
+          command: |
+            docker-compose -f ./sl-base/docker-compose.yml exec \
+            -e CIRCLE_BRANCH=$CIRCLE_BRANCH \
+            -e PRISMA_CLI_KEY=$PRISMA_CLI_KEY \
+             data /bin/sh -c ".circleci/deploy.sh"
