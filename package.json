@@ -7,6 +7,7 @@
     "build": "prisma deploy"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "graphql-cli": "2.16.3"
   }
 }
