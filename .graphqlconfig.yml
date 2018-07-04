@@ -1,0 +1,5 @@
+projects:
+  data:
+    schemaPath: generated/prisma.graphql
+    extensions:
+      prisma: database/prisma.yml
