@@ -1,6 +1,7 @@
 {
   "name": "prisma",
   "version": "1.0.0",
+  "author": "Adrian Carriger <hello@adriancarriger.com> (http://adriancarriger.com)",
   "description": "My Prisma Service",
   "scripts": {
     "start": "nodemon --config config/nodemon.json",
